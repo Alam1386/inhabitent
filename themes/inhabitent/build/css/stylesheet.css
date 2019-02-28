@@ -1,0 +1,120 @@
+/* Custom CSS code starts from here. 
+background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/wp-content/themes/inhabitent/images/home-hero.jpg') no-repeat top;
+*/
+body, button, input, select, textarea {
+    color: #404040;
+    font-family: Merriweather Web,serif;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.75;
+}
+#home-hero {
+  background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(home-hero.jpg) no-repeat top;
+  background-size: cover,cover;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100vh;
+}
+.logo_img{
+  width: 55px;
+  height: 33px;
+}
+.nav-item a{
+  font-family: Novecento Sans Web,sans-serif;
+  text-shadow: 1px 1px 2px #323232;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase; 
+}
+.nav-item a:hover {
+  color: #f0e4d1;
+}
+
+/*Main Logo at center of Hero Section*/
+.main-logo img{
+  position: absolute;
+  top: 36vh;
+  left: 42%;
+}
+.shop-section{
+  display: flex;
+  flex-direction: row;
+}
+.shop-section .card {
+    display: flex;
+    border: 1px solid #e1e1e1;
+    max-width: 23.5%;
+    padding: .75rem;
+    margin: 10px;
+  }
+.shop-section .card-img-top{
+    width: 70px;
+    height: 70px;
+    margin-left: 30%;
+  }
+/*Footer Section*/
+.footer-section {
+  background: url(dark-wood.png) no-repeat top;
+  background-size: cover,cover;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 4rem;
+  padding-bottom: 20px;
+  color: #fff;
+}
+.footer-section a{
+  color: #fff;
+}
+.footer-section h3{
+  color: #d99054;
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  margin-bottom: .75rem;
+  text-transform: uppercase;
+}
+.footer-section img{
+  max-width: 50%;
+}
+.footer-section .container{
+  display: flex;
+  flex-direction: column;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+.business-hours{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+#copyright{
+  text-transform: uppercase;
+  text-align: left;
+  padding-top: 30px;
+}
+.contact p{
+  word-spacing: 10px;
+}
+.social-media{
+  font-size: 20px;
+  word-spacing: 15px;
+}
+@media only screen and (min-width: 900px){
+  .footer-section .container{
+  flex-direction: row;
+  justify-content: space-between;
+  }
+  .contact.business-hours{
+    padding-bottom: 0px;
+  }
+  #copyright{
+    text-align: center;
+  }
+}
