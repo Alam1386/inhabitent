@@ -1,0 +1,983 @@
+/* Custom CSS code starts from here. */
+a {
+  color: #248a83;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #f0e4d1;
+  }
+  &:focus {
+    outline: thin dotted;
+  }
+  &:hover,
+  &:active {
+    outline: 0;
+  }
+}
+  .site-header {
+    background-color: hsla(0,0%,100%,.85);
+    border-bottom: 1px solid #c1c1c1;
+    padding: 0.5rem 0;
+    position: relative;
+    transition: top 0.5s linear;
+    width: 100%;
+    z-index: 3;
+    &.reverse-header {
+      background-color: transparent;
+      border-bottom: 0;
+      position: absolute;
+      text-shadow: 1px 1px 2px #323232;
+      h1 {
+        background: url('/wp-content/themes/inhabitent/images/logos/inhabitent-logo-tent-white.svg') no-repeat;
+        background-size: 50px 33px;
+      }
+      a {
+        font-family: Novecento Sans Web,sans-serif;
+        text-shadow: 1px 1px 2px #323232;
+        font-size: 16px;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase; 
+        &:visited {
+          color: #FFF;
+        }
+        &:hover{
+          color: #f0e4d1;
+        }
+      }
+      .header-search {
+        fieldset {
+          input[type='search'] {
+            color: #FFF;
+            &::placeholder {
+              color: #f0e4d1;
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      .main-navigation {
+        font-family: 'Novecento Sans Web';
+        li {
+          padding-right: 1.5rem;
+        }
+        display: flex;
+        text-transform: uppercase;
+      }
+      .header-search {
+        .search-toggle {
+          float: left;
+        }
+        fieldset {
+          border: 0;
+          padding: 0;
+          margin: 0;
+          label {
+            display: none;
+            float: left;
+            color: #2f1339;
+            font-family: 'Novecento Sans Web';
+            font-size: 17.6px;
+            font-size: 1.1rem;
+            margin-bottom: .5rem;
+            text-transform: uppercase;
+            
+            &.active {
+              display: block;
+            }
+          }
+          input[type='search'] {
+            border: 0;
+            background: transparent;
+            font-family: 'Novecento Sans Web';
+            margin-left: .75rem;
+            padding: 0 .3rem;
+            text-transform: uppercase;
+            width: 0%;
+            -webkit-transition: width 2s;
+            &.active {
+              width: 100%;
+              -webkit-transition: width 2s;
+            }
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+      }
+    }
+    h1 {
+      background: url('/wp-content/themes/inhabitent/images/logos/inhabitent-logo-tent.svg') no-repeat;
+      background-size: 50px 33px;
+      height: 33px;
+      margin: 0;
+      overflow: hidden;
+      text-indent: 100%;
+      white-space: nowrap;
+      width: 50px;
+    }
+  }
+
+  /*--------------------------------------------------------------
+# Page Templates
+--------------------------------------------------------------*/
+
+/* Front page */
+
+.home-hero {
+  align-items: center;
+  background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 url('/wp-content/themes/inhabitent/images/home-hero.jpg') no-repeat top;
+  background-size: cover,cover;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.home {
+  .shop {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .product-type{
+    border: 1px solid #e1e1e1;
+    border-top-width: 5px;
+    -ms-flex: 0 1 23.5%;
+    flex: 0 1 23.5%;
+    max-width: 23.5%;
+    padding: .75rem;
+    margin-bottom: 20px;
+    &:hover{
+      border-color: #d99054;
+    }
+    img {
+      height: 70px;
+      width: 70px;
+      margin: 1rem;
+    }
+  }
+  h2 {
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin: 3rem;
+    text-align: center;
+  }
+}
+
+.button {
+  background: #248a83;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+  font-family: Novecento Sans Web,sans-serif;
+  font-size: 14.4px;
+  font-size: .9rem;
+  line-height: 1;
+  padding: .75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  &:hover {
+    background-color: #19625d;
+    color: #fff;
+  }
+}
+// .journal-entries
+.journal {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px;
+    h2 {
+        color: #2f1339;
+        line-height: 1.25;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    ul {
+      display: flex;
+      justify-content: space-between;
+      list-style-type: none;
+      margin-bottom: 0;
+      margin-left: 0;
+      padding-left: 0;
+    }
+    li {
+      border: 1px solid #e1e1e1;
+      flex: 0 1 32%;
+      position: relative;  
+    }
+}
+.journal-pic-wrapper {
+    background-color: #e1e1e1;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+.entry-journal-pic {  
+    
+  img {
+    left: 50%;
+    max-width: none;
+    max-height: 250px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -52%);
+    width: auto;
+    height: auto;
+    // border: 1px solid #e1e1e1;
+    // border-bottom-width: 5px;
+  }
+}
+.entry-pic-wrapper {
+    background-color: #e1e1e1;
+}
+.entry-info-wrapper {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.75rem;
+    // border: 1px solid #e1e1e1;
+    // border-top-width: 5px;
+}
+.journal-title {
+    font-size: 1.3rem;
+    margin-bottom: 3.75rem;    
+    margin-top: 0;
+    a {
+        color: #248a83;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-family: 'Novecento Sans Web Bold';
+    &:hover {
+            color: #2f1339;
+            text-decoration: none;
+        }
+    }
+}
+.journal-button {
+    position: absolute;
+    bottom: 0.75em;
+    left: 0.75em;
+    border: 1px solid #000;
+    color: #000;
+    border-radius: 35px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    font-family: 'Novecento Sans Web';
+    &:hover {
+      background-color: #248a83;
+      border: 1px solid #248a83;
+      color: #FFF;
+    }
+}
+
+// adventure posts
+
+.adventure-embed {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px;
+    h2 {
+        color: #2f1339;
+        line-height: 1.25;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-family: 'Novecento Sans Web';
+    }
+    ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 2fr;
+        grid-gap: 20px 20px;
+        list-style-type: none;
+        margin-left: 0;
+        padding-left: 0;
+        width: 100%;
+        height: 600px;
+    }
+    li {
+        line-height: 1;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        &:first-child {
+            grid-column: 1/span 2;
+            grid-row: 1/span 2;
+            font-size: 2.8rem;
+        }
+        &:nth-child(2) {
+            grid-column: 3/span 2;
+            grid-row: 1/span 1;
+            font-size: 2.2rem;
+        }
+        &:nth-child(3) {
+            font-size: 1.4rem;
+        }
+        &:nth-child(4) {
+            font-size: 1.4rem;
+        }
+
+    }
+    .adventure-wrapper {
+        img {
+            left: 50%;
+            max-height: 620px;
+            max-width: none;
+            position: absolute;
+            top: 75%;
+            transform: translate(-50%, -75%);
+            width: auto;
+            background:rgba(0,0,0,.35);
+        }
+        &:after {
+            background: rgba(0,0,0,.35);
+            content: "";
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 1;  
+        }
+    }
+
+.adventure-info {
+    margin: 1.5rem;
+    position: absolute;
+    z-index: 2;
+}
+
+.adventure-title {
+        font-family: 'Merriweather Web';
+        font-weight: normal;
+        margin-top: 24px;
+        // z-index: 2;
+        text-decoration: none;
+        color: #FFF;
+        letter-spacing: 2px;
+        text-transform: none;
+    }
+    a {
+        text-decoration: none;
+        color: #FFF;
+        &:hover {
+            text-decoration: none;
+            color: #f0e4d1;
+        } }
+}
+
+.adventure-button {
+    border: 1px solid #FFF;
+    color: #FFF;
+    text-decoration: none;
+    line-height: 1;
+    font-size: 0.9rem;
+    padding: 0.75rem 1.5rem;
+    text-transform: uppercase;
+    &:hover {
+        background-color: #248a83;
+        border: 1px solid #248a83;
+        color: #FFF;
+    } 
+} 
+
+.see-more-adventure {
+  margin-top: 2.25rem;
+    background: #248a83;
+    border: none;
+    color: #FFF;
+    font-family: 'Novecento Sans Web';
+    line-height: 1;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 19%;
+    &:hover {
+        background: #19625d;
+        color: #FFF;
+    }
+}
+.map{
+  height: 400px;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#about-title{
+  text-transform: uppercase;
+}
+.shop {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  p{
+    color: #404040;
+    font-family: Merriweather Web,serif;
+    font-size: 20px;
+    font-size: 1.2rem;
+    line-height: 1.75;
+    margin-bottom: 20px;
+  }
+  h2{
+    color: #2f1339;
+    font-size: 33.6px;
+    font-size: 2.1rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    padding: 10px;
+  }
+  
+}
+/* Adventure Archive Styles */
+.post-type-archive-adventure {
+  .content-area {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+ 
+  .page-title {
+    font-size: 2.4rem;
+  }
+  .adventure-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 1.5rem;
+    margin-bottom: 4.5rem;
+    .adventure-grid-item {
+      position: relative;
+      &:before {
+        content: "";
+        float: left;
+        padding-top: 100%;
+      }
+      h2 {
+        line-height: 1.25;
+        font-size: 3rem;
+        font-weight: 400;
+        margin-bottom: 4.5rem;
+        text-transform: none;
+        a {
+          font-family: 'Merriweather Web';
+          text-transform: none;
+          color: #FFF;
+          &:hover {
+            color: #f0e4d1;
+          }
+        }
+        font-family: Merriweather Web,serif;
+        font-size: 48px;
+        font-size: 3rem;
+        font-weight: 400;
+        margin-bottom: 4.5rem;
+        text-transform: none;
+      }
+      .adventure-item-wrapper {
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+        position: absolute;
+        right: 0;
+        top: 0;
+        &:after {
+          background: rgba(0,0,0,.35);
+          content: "";
+          height: 100%;
+          left: 0;
+          position: absolute;
+          top: 0;
+          width: 100%;
+          z-index: 1;
+        }
+        img {
+          left: 50%;
+          max-height: 550px;
+          max-width: none;
+          width: auto;
+          position: absolute;
+          top: 50%;
+          transform: translate(-50%,-50%);
+          z-index: 1;
+        }
+        .adventure-info {
+          margin: 4.5rem 1.5rem;
+          position: absolute;
+          z-index: 2;
+        }
+      }
+    }
+  }
+}
+
+/* Product Category Page Styles */
+.page-header {
+  text-align: center;
+  border-bottom: 1px dashed #c8c8c8;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.page-title, .entry-title {
+  margin-top: 0;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  .product-grid-item {
+    border: 1px solid #e1e1e1;
+    .price {
+      float: right;
+      padding-left: .25rem;
+      background: #fff;
+    }
+    .product-info {
+      font-size: 14.4px;
+      font-size: .9rem;
+      padding: .75rem 1rem;
+      text-align: left;
+      .entry-title {
+        background: #fff;
+        display: inline;
+        font-size: 16px;
+        font-size: 1rem;
+        font-weight: 400;
+        font-family: Merriweather Web,serif;
+        letter-spacing: 0;
+        line-height: 1.75;
+        padding-right: .25rem;
+        text-transform: none;
+        &:before {
+          float: left;
+          width: 0;
+          white-space: nowrap;
+          content: "...................................................";
+        }
+      }
+    }
+    .thumbnail-wrapper {
+      background-color: #e1e1e1;
+      height: 250px;
+      overflow: hidden;
+      position: relative;
+      .wp-post-image {
+        left: 50%;
+        max-height: 250px;
+        max-width: none;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%,-52%);
+        width: auto;
+      }
+    }
+  }
+}
+
+.taxonomy-description {
+  margin: 2rem auto 3rem;
+  max-width: 800px;
+}
+/* Product Archive Styles */
+.products {
+  text-align: center;
+  display: flex;
+  font-family: 'Novecento Sans Web';
+  font-size: 1.2rem;
+  justify-content: center;
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+  text-transform: uppercase;
+  li {
+    margin: 0 1.5rem;
+    a {
+      text-decoration: none;
+    }
+  }
+}
+#page {
+  width: 100%!important;
+}
+.add-padding {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.single-product {
+  &.hentry {
+    margin: 0 0 4.5rem;
+  }
+  display: flex;
+  justify-content: space-between;
+  .product-image-wrapper, .product-content-wrapper {
+    width: 48%;
+  }
+  .entry-title {
+    color:  #d99054;
+  }
+  .entry-content {
+    .social-buttons {
+      margin: 1.5rem 0;
+      border-radius: 20px;
+      i {
+        margin-right: 10px;
+      }
+    }
+    margin-top: 0;
+    .price {
+      font-family: 'Novecento Sans Web';
+      font-size: 28.8px;
+      font-size: 1.8rem;
+      margin-top: 0;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.black-btn {
+  background-color: transparent;
+  border: 1px solid #000;
+  color: #000;
+  border-radius: 0;
+  cursor: pointer;
+  font-family: Novecento Sans Web,sans-serif;
+  font-size: 14.4px;
+  font-size: .9rem;
+  line-height: 1;
+  padding: .75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.black-btn:hover, .black-btn:active, .black-btn:focus {
+  background: #19625d;
+  background-color: #248a83;
+  border: 1px solid #248a83;
+  box-shadow: none;
+  color: #fff;
+}
+.single-journal, .post-type-archive-journal {
+  .page-container {
+    display: flex;
+    .content-area {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      width: 75%;
+      padding-right: 5%;
+      border-right: 1px solid #e1e1e1;
+      .entry-header {
+        position: relative;
+        line-height: 0;
+        img {
+          height: auto;
+          max-width: 100%;
+        }
+        h1 {
+          line-height: 1.25;
+          background-color: #248a83;
+          color: #FFF;
+          font-size: 2.1rem;
+          left: 0;
+          padding: 0.75rem 1.5rem;
+          position: absolute;
+          margin-top: 2.25rem;
+          max-width: 75%;
+          top: 0;
+        }
+        .entry-meta {
+          background-color: #248a83;
+          bottom: 0;
+          color: #FFF;
+          display: inline-block;
+          font-family: 'Novecento Sans Web';
+          padding: 1rem 1.5rem;
+          position: absolute;
+          right: 0;
+          text-transform: uppercase;
+        }
+      }
+      .journal-info {
+        .cat-links {
+          margin-right: 1.5rem;
+        }
+        .cat-links, .tag-links {
+          display: inline-block;
+          font-family: 'Novecento Sans Web';
+          text-transform: uppercase;
+          a {
+            color: #248a83;
+            text-decoration: none;
+            &:hover {
+              color: #2f1339;
+            }
+          }
+        }
+      }
+      .social-buttons {
+        margin: 1.5rem 0;
+        border-radius: 20px;
+      }
+    }
+    .site-footer {
+      width: 25%;
+    }
+  }
+}
+/* Comment Styles */
+.comments-area {
+  .comments-title {
+    font-size: 2.1rem;
+    margin-top: 25px;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .comment-list {
+    list-style: none;
+    li {
+      border-bottom: 1px solid #e1e1e1; 
+    }
+    .comment {
+      .children {
+        list-style: none;
+      }
+      article {
+        .comment-author-avatar {
+          border-radius: 50%;
+          height: 64px;
+          margin-right: 1.5rem;
+          overflow: hidden;
+          width: 64px;
+          img {
+            height: auto;
+            max-width: 100%;
+          }
+        }
+        .reply {
+          a {
+            text-decoration: none;
+          }
+        }
+        display: flex;
+        padding-bottom: 1.5rem;
+      }
+    } 
+  }
+}
+
+/* About Page Styles */
+.about-hero {
+  background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), url('/wp-content/themes/inhabitent/images/about-hero.jpg') no-repeat center bottom;
+  background-size: cover, cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #FFF;
+}
+.about-container {
+  h2 {
+    text-align: center;
+    font-size: 2.1rem;
+    margin-bottom: 1.5rem;
+  }
+  .hentry {
+    margin: 0 0 4.5rem;
+  }
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Single Adventure Styles */
+.single-adventure {
+  .entry-title {
+    font-size: 2.4rem;
+    margin-bottom: .5rem;
+    line-height: 1.25;
+    margin-top: 3rem;
+  }
+  .entry-meta {
+    text-transform: uppercase;
+    font-family: 'Novecento Sans Web';
+  }
+  .adventure-container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/* Find Us Styles */
+.find-us-container {
+  .entry-title {
+    font-size: 2.4rem;
+    margin-bottom: 0.5rem;
+  }
+  h2 {
+    color: #2f1339;
+    font-size: 2.1rem;
+    margin-bottom: 1.5rem;
+  }
+  display: flex;
+  .content-area {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    width: 75%;
+    border-right: 1px solid #e1e1e1;
+    padding-right: 5%;
+  }
+  .site-footer {
+    width: 25%;
+  }
+}
+
+/* Sidebar Styles */
+.sidebar-widget-area {
+  margin: 2rem;
+  width: 250px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 5%;
+  .social-icons {
+    display: none;
+  }
+  h2, h3 {
+    line-height: 1.25;
+    font-family: 'Novecento Sans Web';
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+  }
+  .widget_archive {
+    ul {
+      margin-left: 0;
+      padding-left: 0;
+      list-style:none;
+    }
+  }
+}
+.shop-section{
+  display: flex;
+  flex-direction: row;
+}
+.shop-section .card {
+    display: flex;
+    border: 1px solid #e1e1e1;
+    max-width: 23.5%;
+    padding: .75rem;
+    margin: 10px;
+  }
+.shop-section .card-img-top{
+    width: 70px;
+    height: 70px;
+    margin-left: 30%;
+  }
+
+  /*Footer Section*/
+.footer-section {
+  background: url('/wp-content/themes/inhabitent/images/dark-wood.png') no-repeat top;
+  background-size: cover,cover;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 4rem;
+  padding-bottom: 20px;
+  color: #fff;
+}
+.footer-section a{
+  color: #fff;
+}
+.footer-section h3{
+  color: #d99054;
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  margin-bottom: .75rem;
+  text-transform: uppercase;
+}
+.footer-section img{
+  max-width: 50%;
+}
+.footer-section .container{
+  display: flex;
+  flex-direction: column;
+}
+.contact-form {
+  label{
+  color: #2f1339;
+  display: block;
+  font-family: Novecento Sans Web,sans-serif;
+  font-size: 17.6px;
+  font-size: 1.1rem;
+  margin-bottom: .5rem;
+  text-transform: uppercase;
+  }
+  input[type="email"], input[type="password"], input[type="search"], input[type="text"], input[type="url"], textarea {
+    color: #666;
+    background-color: #f4f4f4;
+    border: 1px solid #e1e1e1;
+    border-radius: 0;
+    padding: 0.6rem;
+  }
+  button:active, button:focus, button:hover, input[type="button"]:active, input[type="button"]:focus, input[type="button"]:hover, input[type="reset"]:active, input[type="reset"]:focus, input[type="reset"]:hover, input[type="submit"]:active, input[type="submit"]:focus, input[type="submit"]:hover {
+    background: #19625d;
+    color: #fff;
+  }
+  input[type="button"], input[type="reset"], input[type="submit"] {
+    background: #248a83;
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    cursor: pointer;
+    font-family: Novecento Sans Web,sans-serif;
+    font-size: 14.4px;
+    font-size: .9rem;
+    line-height: 1;
+    padding: .75rem 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+.business-hours{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+#copyright{
+  text-transform: uppercase;
+  text-align: left;
+  padding-top: 30px;
+}
+.contact p{
+  word-spacing: 10px;
+}
+.social-media{
+  font-size: 20px;
+  word-spacing: 15px;
+}
+@media only screen and (min-width: 900px){
+  .footer-section .container{
+  flex-direction: row;
+  justify-content: space-between;
+  }
+  .contact.business-hours{
+    padding-bottom: 0px;
+  }
+  #copyright{
+    text-align: center;
+  }
+}
