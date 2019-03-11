@@ -9174,7 +9174,11 @@ a {
     position: absolute;
     text-shadow: 1px 1px 2px #323232; }
     .site-header.reverse-header h1 {
+<<<<<<< HEAD
       background: url("../../images/logos/inhabitent-logo-tent-white.svg") no-repeat;
+=======
+      background: url("/wp-content/themes/inhabitent/images/logos/inhabitent-logo-tent-white.svg") no-repeat;
+>>>>>>> 0d3aab6e90a6cb96eaf6e6e293e736db3f74dde9
       background-size: 50px 33px; }
     .site-header.reverse-header a {
       font-family: Novecento Sans Web,sans-serif;
@@ -9245,7 +9249,11 @@ a {
         .site-header .container .header-search fieldset input[type='search']:focus {
           outline: none; }
   .site-header h1 {
+<<<<<<< HEAD
     background: url("../../images/logos/inhabitent-logo-tent.svg") no-repeat;
+=======
+    background: url("/wp-content/themes/inhabitent/images/logos/inhabitent-logo-tent.svg") no-repeat;
+>>>>>>> 0d3aab6e90a6cb96eaf6e6e293e736db3f74dde9
     background-size: 50px 33px;
     height: 33px;
     margin: 0;
@@ -9262,8 +9270,13 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+<<<<<<< HEAD
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url("../../images/home-hero.jpg") no-repeat top;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url("../../images/home-hero.jpg") no-repeat top;
+=======
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url("/wp-content/themes/inhabitent/images/home-hero.jpg") no-repeat top;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url("/wp-content/themes/inhabitent/images/home-hero.jpg") no-repeat top;
+>>>>>>> 0d3aab6e90a6cb96eaf6e6e293e736db3f74dde9
   background-size: cover,cover;
   display: -ms-flexbox;
   display: -webkit-box;
@@ -9550,8 +9563,11 @@ a {
 
 .post-type-archive-adventure .page-title {
   font-size: 2.4rem; }
+<<<<<<< HEAD
   .post-type-archive-adventure .page-title h1 {
     text-transform: uppercase; }
+=======
+>>>>>>> 0d3aab6e90a6cb96eaf6e6e293e736db3f74dde9
 
 .post-type-archive-adventure .adventure-grid {
   display: grid;
@@ -9836,8 +9852,13 @@ a {
 
 /* About Page Styles */
 .about-hero {
+<<<<<<< HEAD
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../images/about-hero.jpg") no-repeat center bottom;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/about-hero.jpg") no-repeat center bottom;
+=======
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("/wp-content/themes/inhabitent/images/about-hero.jpg") no-repeat center bottom;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("/wp-content/themes/inhabitent/images/about-hero.jpg") no-repeat center bottom;
+>>>>>>> 0d3aab6e90a6cb96eaf6e6e293e736db3f74dde9
   background-size: cover, cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9944,7 +9965,11 @@ a {
 
 /*Footer Section*/
 .footer-section {
+<<<<<<< HEAD
   background: url("../../images/dark-wood.png") no-repeat top;
+=======
+  background: url("/wp-content/themes/inhabitent/images/dark-wood.png") no-repeat top;
+>>>>>>> 0d3aab6e90a6cb96eaf6e6e293e736db3f74dde9
   background-size: cover,cover;
   -ms-flex-direction: column;
   -webkit-box-orient: vertical;

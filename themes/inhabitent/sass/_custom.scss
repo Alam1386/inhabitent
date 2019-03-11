@@ -29,7 +29,11 @@ a {
       position: absolute;
       text-shadow: 1px 1px 2px #323232;
       h1 {
+<<<<<<< HEAD
         background: url('../../images/logos/inhabitent-logo-tent-white.svg') no-repeat;
+=======
+        background: url('/wp-content/themes/inhabitent/images/logos/inhabitent-logo-tent-white.svg') no-repeat;
+>>>>>>> 0d3aab6e90a6cb96eaf6e6e293e736db3f74dde9
         background-size: 50px 33px;
       }
       a {
@@ -112,7 +116,11 @@ a {
       }
     }
     h1 {
+<<<<<<< HEAD
       background: url('../../images/logos/inhabitent-logo-tent.svg') no-repeat;
+=======
+      background: url('/wp-content/themes/inhabitent/images/logos/inhabitent-logo-tent.svg') no-repeat;
+>>>>>>> 0d3aab6e90a6cb96eaf6e6e293e736db3f74dde9
       background-size: 50px 33px;
       height: 33px;
       margin: 0;
@@ -131,7 +139,11 @@ a {
 
 .home-hero {
   align-items: center;
+<<<<<<< HEAD
   background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 url('../../images/home-hero.jpg') no-repeat top;
+=======
+  background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 url('/wp-content/themes/inhabitent/images/home-hero.jpg') no-repeat top;
+>>>>>>> 0d3aab6e90a6cb96eaf6e6e293e736db3f74dde9
   background-size: cover,cover;
   display: -ms-flexbox;
   display: flex;
@@ -173,6 +185,10 @@ a {
     text-align: center;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0d3aab6e90a6cb96eaf6e6e293e736db3f74dde9
 .button {
   background: #248a83;
   border: none;
@@ -447,9 +463,12 @@ a {
  
   .page-title {
     font-size: 2.4rem;
+<<<<<<< HEAD
     h1{
       text-transform: uppercase;
     }
+=======
+>>>>>>> 0d3aab6e90a6cb96eaf6e6e293e736db3f74dde9
   }
   .adventure-grid {
     display: grid;
@@ -779,7 +798,11 @@ a {
 
 /* About Page Styles */
 .about-hero {
+<<<<<<< HEAD
   background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), url('../../images/about-hero.jpg') no-repeat center bottom;
+=======
+  background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), url('/wp-content/themes/inhabitent/images/about-hero.jpg') no-repeat center bottom;
+>>>>>>> 0d3aab6e90a6cb96eaf6e6e293e736db3f74dde9
   background-size: cover, cover;
   display: flex;
   align-items: center;
@@ -886,7 +909,11 @@ a {
 
   /*Footer Section*/
 .footer-section {
+<<<<<<< HEAD
   background: url('../../images/dark-wood.png') no-repeat top;
+=======
+  background: url('/wp-content/themes/inhabitent/images/dark-wood.png') no-repeat top;
+>>>>>>> 0d3aab6e90a6cb96eaf6e6e293e736db3f74dde9
   background-size: cover,cover;
   -ms-flex-direction: column;
   flex-direction: column;

@@ -1,11 +1,16 @@
 <?php
 /**
+<<<<<<< HEAD
  * The template for displaying product archive.
+=======
+ * The template for displaying archive pages.
+>>>>>>> 0d3aab6e90a6cb96eaf6e6e293e736db3f74dde9
  *
  * @package RED_Starter_Theme
  */
 
 get_header(); ?>
+<<<<<<< HEAD
   
   <div id="primary" class="content-area container">
     <main id="main" class="site-main" role="main">
@@ -34,6 +39,20 @@ get_header(); ?>
         ?>
       </ul>
       </header><!-- .page-header -->
+=======
+
+	<div id="primary" class="content-area container">
+		<main id="main" class="site-main" role="main">
+
+		<?php if ( have_posts() ) : ?>
+
+			<header class="page-header">
+				<?php
+					the_archive_title( '<h1 class="page-title">', '</h1>' );
+					the_archive_description( '<div class="taxonomy-description">', '</div>' );
+				?>
+			</header><!-- .page-header -->
+>>>>>>> 0d3aab6e90a6cb96eaf6e6e293e736db3f74dde9
 			<?php 
 				$query_vars = $wp_query->query_vars;
 				$query_vars['orderby'] = 'title';
@@ -52,7 +71,11 @@ get_header(); ?>
 					</div>
 					<div class="product-info">
 						<?php the_title('<h2 class="entry-title">', '</h2>' ); ?>
+<<<<<<< HEAD
 						<span class="price">$<?php echo '183.00'; ?></span>
+=======
+						<span class="price">$<?php echo number_format(CFS()->get('price'), 2); ?></span>
+>>>>>>> 0d3aab6e90a6cb96eaf6e6e293e736db3f74dde9
 					</div>
 					</div>
 			

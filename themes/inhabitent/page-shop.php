@@ -40,7 +40,11 @@ get_header(); ?>
       $query_shop = array (
         'orderby' => 'title',
         'order' => 'ASC',
+<<<<<<< HEAD
         // 'category_id'=> 16,
+=======
+        'category_id'=> 16,
+>>>>>>> 0d3aab6e90a6cb96eaf6e6e293e736db3f74dde9
         'posts_per_page' => 30,
         'taxonomy' => 'product_type'
       ); 
