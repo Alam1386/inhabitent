@@ -9,6 +9,10 @@
 plugins/*
 !plugins/inhabitent-functionality/
 !plugins/business-hours-widget/
+!plugins/contact-form-7/
+!plugins/business-hours-widget/
+!plugins/custom-field-suite/
+!plugins/wp-migrate-db/
 # Ignore everything in "themes" except the active theme. #
 themes/*
 !themes/inhabitent/
